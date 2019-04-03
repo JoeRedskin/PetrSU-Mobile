@@ -13,7 +13,7 @@
 		CED4441322540A3D00F8C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4441222540A3D00F8C81A /* Assets.xcassets */; };
 		CED4441622540A3D00F8C81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4441422540A3D00F8C81A /* LaunchScreen.storyboard */; };
 		CED4441F22540CD700F8C81A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4441E22540CD700F8C81A /* NewsViewController.swift */; };
-		CED4442122540CEF00F8C81A /* FullNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4442022540CEF00F8C81A /* FullNewsViewController.swift */; };
+		CED4442122540CEF00F8C81A /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4442022540CEF00F8C81A /* NewsDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		CED4441522540A3D00F8C81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED4441722540A3D00F8C81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED4441E22540CD700F8C81A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		CED4442022540CEF00F8C81A /* FullNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNewsViewController.swift; sourceTree = "<group>"; };
+		CED4442022540CEF00F8C81A /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CED4441E22540CD700F8C81A /* NewsViewController.swift */,
-				CED4442022540CEF00F8C81A /* FullNewsViewController.swift */,
+				CED4442022540CEF00F8C81A /* NewsDetailsViewController.swift */,
 			);
 			path = NewsScreen;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			files = (
 				CED4441F22540CD700F8C81A /* NewsViewController.swift in Sources */,
 				CED4440E22540A3C00F8C81A /* ViewController.swift in Sources */,
-				CED4442122540CEF00F8C81A /* FullNewsViewController.swift in Sources */,
+				CED4442122540CEF00F8C81A /* NewsDetailsViewController.swift in Sources */,
 				CED4440C22540A3C00F8C81A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
