@@ -10,33 +10,39 @@ import UIKit
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, XMLParserDelegate {
     
-    
     @IBOutlet weak var NewsTableView: UITableView!
     
-    var newsArray: [News] = []
-    var myFeed : NSArray = []
-    var feedImgs: [AnyObject] = []
+    var newsList: [News] = []
+    //var feedImgs: [String] = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myFeed.count
+        return newsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath) as! NewsTableViewCell
+//        if let url = URL(string: newsList[indexPath.row].imageURL!){
+//            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+//                let urlContents = try? Data(contentsOf: url)
+//                DispatchQueue.main.async {
+//                    if let imageData = urlContents {
+//                        var image = UIImage(data: imageData)
+//                        image = self!.resizeImage(image: image!, toTheSize: CGSize(width: 70, height: 70))
+//                        let cellImageLayer: CALayer?  = cell.imageView?.layer
+//
+//                        cellImageLayer!.cornerRadius = 35
+//                        cellImageLayer!.masksToBounds = true
+//
+//                        cell.imageView?.image = image
+//
+//                    }
+//                }
+//            }
+//        }
         
-//        let url = URL(string:feedImgs[indexPath.row] as! String)
-//        let data = NSData(contentsOf:url! as URL)
-//        var image = UIImage(data:data! as Data)
-//
-//        image = resizeImage(image: image!, toTheSize: CGSize(width: 70, height: 70))
-//
-//        let cellImageLayer: CALayer?  = cell.imageView?.layer
-//
-//        cellImageLayer!.cornerRadius = 35
-//        cellImageLayer!.masksToBounds = true
-//
-//        cell.imageView?.image = image
-        cell.addNews(title: ((myFeed.object(at: indexPath.row) as AnyObject).object(forKey: "title") as? String)!, description: ((myFeed.object(at: indexPath.row) as AnyObject).object(forKey: "description") as? String)!)
+
+        cell.addNews(title: newsList[indexPath.row].title ?? "",
+                     description: newsList[indexPath.row].description ?? "")
         
         return cell
     }
@@ -48,14 +54,12 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let dataLoader = DataCollection()
         let myParser = dataLoader.initWithURL() as! DataCollection
         
-        feedImgs = myParser.img as [AnyObject]
-        myFeed = myParser.feeds
-        //print(myFeed)
+       //feedImgs = myParser.img
+        newsList = myParser.newsList
         NewsTableView.reloadData()
-
     }
     
-    func resizeImage(image:UIImage, toTheSize size:CGSize)->UIImage{
+    func resizeImage(image:UIImage, toTheSize size:CGSize) -> UIImage {
         
         let scale = CGFloat(max(size.width/image.size.width,
                                 size.height/image.size.height))
