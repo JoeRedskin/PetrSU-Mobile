@@ -8,11 +8,6 @@
 
 import Foundation
 
-//
-//struct NewsList {
-//    let newsList: [News]
-//}
-
 struct News {
     var title: String? = ""
     var description: String? = ""
