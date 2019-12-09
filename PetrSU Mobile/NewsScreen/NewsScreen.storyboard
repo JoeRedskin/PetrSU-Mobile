@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JBu-qz-asg">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JBu-qz-asg">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +13,7 @@
             <objects>
                 <navigationController id="JBu-qz-asg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ZNo-0q-a1l">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,11 +29,11 @@
             <objects>
                 <viewController storyboardIdentifier="NewsScreen" id="HTg-5g-Pyp" customClass="NewsListViewController" customModule="PetrSU_Mobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IPJ-Eu-HtJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9rF-tK-ruY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -47,28 +45,28 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhR-wu-oXI">
-                                                    <rect key="frame" x="4" y="8" width="312" height="118.5"/>
+                                                    <rect key="frame" x="4" y="8" width="312" height="121"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Читать" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiR-8f-pEX">
-                                                            <rect key="frame" x="239" y="49" width="57" height="20.5"/>
+                                                            <rect key="frame" x="239" y="49" width="57" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <color key="textColor" red="0.062745098039215685" green="0.13333333333333333" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar1-Ei-4eW">
-                                                            <rect key="frame" x="269.5" y="100.5" width="26.5" height="15"/>
+                                                            <rect key="frame" x="269.5" y="103" width="26.5" height="15"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.45882352939999999" green="0.49803921569999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHT-vl-zCW">
-                                                            <rect key="frame" x="99" y="10" width="35.5" height="91.5"/>
+                                                            <rect key="frame" x="99" y="10" width="35.5" height="94"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5pK-GA-pxg">
-                                                            <rect key="frame" x="15" y="32" width="64" height="64"/>
+                                                            <rect key="frame" x="15" y="32" width="64" height="65"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="4JI-HI-wNS"/>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="Gms-zO-meQ"/>
@@ -155,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsu-0p-OOt">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -185,7 +183,7 @@
             <objects>
                 <viewController id="UaB-xN-X6Z" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B7m-Ys-kmC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="muq-Hr-pIQ"/>
@@ -196,35 +194,19 @@
             </objects>
             <point key="canvasLocation" x="644" y="360"/>
         </scene>
-        <!--Timetable-->
-        <scene sceneID="w16-a4-EwK">
-            <objects>
-                <viewController id="kTf-OH-uTh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MBm-2X-ZhE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="p20-zI-Na4"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Timetable" image="course" id="u04-uk-M1o"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hoc-gX-2M6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="644" y="-406"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RrG-RF-04o">
             <objects>
                 <tabBarController id="Xgn-60-EQv" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="sk0-vk-d3I"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d4d-D7-DAp">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="d4d-D7-DAp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="HTg-5g-Pyp" kind="relationship" relationship="viewControllers" id="GP0-dF-J6Q"/>
-                        <segue destination="kTf-OH-uTh" kind="relationship" relationship="viewControllers" id="UER-BT-j10"/>
+                        <segue destination="GZJ-Q0-cJD" kind="relationship" relationship="viewControllers" id="hVZ-4s-SbX"/>
                         <segue destination="UaB-xN-X6Z" kind="relationship" relationship="viewControllers" id="Te9-Uc-aRB"/>
                     </connections>
                 </tabBarController>
@@ -232,9 +214,18 @@
             </objects>
             <point key="canvasLocation" x="-162" y="-406"/>
         </scene>
+        <!--Timetable-->
+        <scene sceneID="EXc-X8-xRd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Timetable" id="GZJ-Q0-cJD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="xSx-YF-rKc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="niL-Fo-mMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="-407"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="course" width="25" height="25"/>
         <image name="news" width="25" height="25"/>
         <image name="placeholder" width="512" height="512"/>
         <image name="university" width="25" height="25"/>
